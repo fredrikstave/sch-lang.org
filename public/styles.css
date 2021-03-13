@@ -6,12 +6,6 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
-@media screen and (max-width: 400px) {
-    body {
-        height: auto;
-        font-size: 6px;
-    }
-}
 .wrapper {
     height: inherit;
     display: flex;
@@ -66,4 +60,13 @@ body {
 }
 .wrapper pre .str {
     color: #D88E73;
+}
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+        font-size: 6px;
+    }
+    .wrapper pre {
+        font-size: 1em;
+    }
 }
