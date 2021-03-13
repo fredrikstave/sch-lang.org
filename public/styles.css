@@ -1,9 +1,15 @@
 body {
-    height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: #1a1b4b;
+    font-size: 16px;
+    background-color: #252526;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 6px;
+    }
 }
 .wrapper {
     height: inherit;
@@ -17,15 +23,46 @@ body {
     color: #fff;
     margin-top: 4px;
     margin-bottom: 8px;
-    font-size: 42px;
+    font-size: 3em;
 }
 .wrapper h3 {
     color: #fff;
-    font-size: 16px;
-    margin-bottom: 4px;
+    font-size: 1em;
+    margin-bottom: .2em;
 }
 .wrapper code {
-    font-size: 16px;
+    font-size: 1em;
     background-color: whitesmoke;
-    padding: 4px 8px;
+    padding: .2em 8px;
+}
+.wrapper em {
+    color: #fff;
+    margin-top: 3em;
+}
+.wrapper pre {
+    font-size: 1.5em;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+    padding: 1.5em 24px;
+}
+.wrapper pre .type {
+    color: #00CCAF;
+}
+.wrapper pre .func {
+    color: #DCDDA4;
+}
+.wrapper pre .var {
+    color: #89DEFF;
+}
+.wrapper pre .keyword {
+    color: #D082C4;
+}
+.wrapper pre .const {
+    color: #AECFA4;
+}
+.wrapper pre .oper {
+    color: #3B9DDB;
+}
+.wrapper pre .str {
+    color: #D88E73;
 }

@@ -3,6 +3,7 @@
     <head>
         <title>Schlang</title>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles.css" />
@@ -12,6 +13,26 @@
             <h3>Coming soon</h3>
             <h1>Schlang</h1>
             <code>/slaŋ/</code>
+            <em>Here's a sneak peak of the language</em>
+            <pre>
+<span class="oper">use</span> io;
+
+<span class="func">fibonacci</span>(<span class="var">n</span>: <span class="type">int</span>) -> <span class="type">int</span> {
+    <span class="keyword">if</span> (<span class="var">n</span> <span class="oper">is</span> <span class="const">0</span>) {
+        <span class="keyword">return</span> <span class="const">0</span>;
+    } <span class="keyword">else if</span> (<span class="var">n</span> <span class="oper">is</span> <span class="const">1</span> <span class="oper">or</span> <span class="const">2</span>) {
+        <span class="keyword">return</span> <span class="const">1</span>;
+    } <span class="keyword">else</span> {
+        <span class="keyword">return</span> <span class="func">fibonacci</span>(<span class="var">n</span> - <span class="const">1</span>) + <span class="func">fibonacci</span>(<span class="var">n</span> - <span class="const">2</span>);
+    }
+}
+
+<span class="func">main</span>() {
+    <span class="keyword">strict</span> <span class="var">fibCalculation</span> = <span class="func">fibonacci</span>(<span class="const">120</span>);
+
+    io.<span class="func">println</span>(<span class="func">concat</span>(<span class="str">"Fibonacci: "</span>, <span class="var">fibCalculation</span>));
+}
+            </pre>
         </main>
     </body>
 </html>
